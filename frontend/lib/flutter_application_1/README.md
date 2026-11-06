@@ -2,6 +2,19 @@
 
 A new Flutter project.
 
+## Source organization
+
+The application code is split into Dart part files under `lib/` while keeping
+one shared library for the existing in-memory demo state:
+
+- `main.dart` - imports, part declarations, and app entry point
+- `models.dart` - shared records, enums, and data helpers
+- `core.dart` - application state, authentication, and role selection
+- `admin.dart` - Admin dashboard and management screens
+- `manager.dart` - Manager dashboard and management screens
+- `citizen.dart` - Citizen screens and feedback flows
+- `driver.dart` - Driver dashboard, tasks, issues, and profile screens
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
